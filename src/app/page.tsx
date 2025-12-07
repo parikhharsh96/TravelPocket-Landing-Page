@@ -1,6 +1,8 @@
 import ComparisonSection from "@/components/main/comparison-section";
 import ContactOurExperts from "@/components/main/contact-our-experts";
+import CtaBannerSection from "@/components/main/cta-banner-section";
 import FeaturesSection from "@/components/main/features-section";
+import Footer from "@/components/main/footer";
 import GiftSetsSection from "@/components/main/gift-sets-section";
 import HomeHeroSection from "@/components/main/hero-section";
 import KailashFireHorseSection from "@/components/main/kailash-fire-horse-section";
@@ -10,6 +12,7 @@ import WhatsAppBanner from "@/components/main/whatsapp-banner";
 import WhyTravelPocketSection from "@/components/main/why-travelpocket-section";
 import { Package } from "lucide-react";
 import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -24,6 +27,8 @@ export default function Home() {
     <GiftSetsSection />
     <TestimonialCards/>
     <WhatsAppBanner/>
+    <CtaBannerSection/>
+    <Footer/>
 
     </div>
     

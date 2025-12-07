@@ -5,6 +5,9 @@ import type React from "react"
 import { User, Phone, MessageSquare } from "lucide-react"
 import { useState } from "react"
 
+// This should look like: https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx0bw21rDwtTlaYtvuSpiFe9iprzsCYqGaIllZSL6kCUPJSAnV0WYSGoUShB4x8HQeGqA/exec"
+
 export default function ContactOurExperts() {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,10 +15,38 @@ export default function ContactOurExperts() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    // Add your form submission logic here
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    try {
+      const formDataToSend = new URLSearchParams()
+      formDataToSend.append("name", formData.name)
+      formDataToSend.append("phone", formData.phone)
+      formDataToSend.append("message", formData.message)
+      formDataToSend.append("source", "Contact Section")
+      formDataToSend.append("timestamp", new Date().toISOString())
+
+      // Send directly to Google Apps Script Web App
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        body: formDataToSend,
+        mode: "no-cors", // Required for cross-origin requests to Google Apps Script
+      })
+
+      // Since mode is "no-cors", we can't read the response, so assume success
+      setSubmitStatus("success")
+      setFormData({ name: "", phone: "", message: "" })
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -100,10 +131,18 @@ export default function ContactOurExperts() {
                 {/* Submit Button */}
                 <button
                   type="submit"
+                   disabled={isSubmitting}
                   className="w-full bg-[#e97737] hover:bg-[#d16a2f] text-white font-bold py-2.5 rounded-lg transition-colors text-sm"
                 >
-                  SUBMIT
+                  {isSubmitting ? "SUBMITTING..." : "SUBMIT"}
                 </button>
+
+                {submitStatus === "success" && (
+                  <p className="text-green-600 text-xs text-center">Thank you! We'll contact you soon.</p>
+                )}
+                {submitStatus === "error" && (
+                  <p className="text-red-600 text-xs text-center">Something went wrong. Please try again.</p>
+                )}
               </form>
 
               {/* Footer Text */}
