@@ -3,9 +3,11 @@
 import { Phone } from "lucide-react"
 import { useContactModal } from "./contact-modal"
 
-const { openModal } = useContactModal()
+
 
 export default function CtaBannerSection() {
+
+  const { openModal } = useContactModal()
   return (
     <section className="relative w-full">
       {/* Background Image */}

@@ -42,7 +42,7 @@ import { useRouter } from "next/navigation";
 
 import { useContactModal } from "../main/contact-modal"
 
-const { openModal } = useContactModal()
+
 
 interface HeaderProps {
     bgColor?: string; // pass tailwind background class
@@ -102,6 +102,8 @@ export default function Header({ bgColor, rounded, showSearch = false }: HeaderP
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const [popoverOpen, setPopoverOpen] = useState(false);
     const router = useRouter();
+
+    const { openModal } = useContactModal()
 
     const navLinks = ["Home", "Why Us", "Packages", "Gifts","Testimonials","Reach us On Whatsapp"];
     const topLinks = [
