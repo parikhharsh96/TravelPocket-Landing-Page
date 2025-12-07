@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Figtree, Playfair_Display, Inter } from "next/font/google";
 import { Dancing_Script } from 'next/font/google';
 import "./globals.css";
+import { ContactModalProvider } from "@/components/main/contact-modal";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -51,7 +52,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ContactModalProvider>{children}</ContactModalProvider>
       </body>
     </html>
   );

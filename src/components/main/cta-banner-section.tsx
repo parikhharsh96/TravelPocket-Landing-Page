@@ -1,4 +1,9 @@
+"use client"
+
 import { Phone } from "lucide-react"
+import { useContactModal } from "./contact-modal"
+
+const { openModal } = useContactModal()
 
 export default function CtaBannerSection() {
   return (
@@ -31,7 +36,8 @@ export default function CtaBannerSection() {
 
           {/* Buttons */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full max-w-md sm:max-w-none sm:w-auto">
-            <button className="bg-[#e97737] hover:bg-[#d16a2f] text-white px-6 py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base text-center whitespace-nowrap">
+            <button className="bg-[#e97737] hover:bg-[#d16a2f] text-white px-6 py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base text-center whitespace-nowrap"
+             onClick={openModal}>
               Book your Spot for 2026
             </button>
 

@@ -40,6 +40,10 @@ import {
 import { ScrollArea } from "../ui/scroll-area";
 import { useRouter } from "next/navigation";
 
+import { useContactModal } from "../main/contact-modal"
+
+const { openModal } = useContactModal()
+
 interface HeaderProps {
     bgColor?: string; // pass tailwind background class
     rounded?: string;
@@ -181,7 +185,8 @@ export default function Header({ bgColor, rounded, showSearch = false }: HeaderP
                     <Button className="bg-[#e97737] hover:bg-[#c75414] px-2 sm:px-4">
                   <div className="flex items-center gap-2">
                     
-                    <div className="text-white font-['Figtree'] text-[12px] md:text-[14px] font-semibold leading-[24px] uppercase">
+                    <div className="text-white font-['Figtree'] text-[12px] md:text-[14px] font-semibold leading-[24px] uppercase"
+                    onClick={openModal}>
                       <span >Book Now</span>
                      
                     </div>

@@ -5,6 +5,8 @@ import type React from "react"
 import { useState } from "react"
 import { User, Phone, MessageSquare } from "lucide-react"
 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx0bw21rDwtTlaYtvuSpiFe9iprzsCYqGaIllZSL6kCUPJSAnV0WYSGoUShB4x8HQeGqA/exec"
+
 export default function EnquiryForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,11 +14,39 @@ export default function EnquiryForm() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    // Add your form submission logic here
-  }
+  const [isSubmitting, setIsSubmitting] = useState(false)
+    const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+  
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault()
+      setIsSubmitting(true)
+      setSubmitStatus("idle")
+  
+      try {
+        const formDataToSend = new URLSearchParams()
+        formDataToSend.append("name", formData.name)
+        formDataToSend.append("phone", formData.phone)
+        formDataToSend.append("message", formData.message)
+        formDataToSend.append("source", "Hero Section")
+        formDataToSend.append("timestamp", new Date().toISOString())
+  
+        // Send directly to Google Apps Script Web App
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          body: formDataToSend,
+          mode: "no-cors", // Required for cross-origin requests to Google Apps Script
+        })
+  
+        // Since mode is "no-cors", we can't read the response, so assume success
+        setSubmitStatus("success")
+        setFormData({ name: "", phone: "", message: "" })
+      } catch (error) {
+        console.error("Error submitting form:", error)
+        setSubmitStatus("error")
+      } finally {
+        setIsSubmitting(false)
+      }
+    }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -52,8 +82,8 @@ export default function EnquiryForm() {
             <input
               type="text"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
+               value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               placeholder="Name*"
               required
               className="w-full bg-white rounded-sm pl-16 pr-6 py-1 text-[#5a5a5a] font-['Figtree'] text-[12px] lg:text-[14px] placeholder:text-[#5a5a5a] focus:outline-none focus:ring-2 focus:ring-[#e97737]"
@@ -68,8 +98,8 @@ export default function EnquiryForm() {
             <input
               type="tel"
               name="phone"
-              value={formData.phone}
-              onChange={handleChange}
+               value={formData.phone}
+                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               placeholder="Phone No.*"
               required
               className="w-full bg-white rounded-sm pl-16 pr-6 py-1 text-[#5a5a5a] font-['Figtree'] text-[12px] lg:text-[14px] placeholder:text-[#5a5a5a] focus:outline-none focus:ring-2 focus:ring-[#e97737]"
@@ -84,7 +114,7 @@ export default function EnquiryForm() {
             <textarea
               name="message"
               value={formData.message}
-              onChange={handleChange}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Your Message"
               rows={3}
               className="w-full bg-white rounded-sm pl-16 pr-6 py-1 text-[#5a5a5a] font-['Figtree'] text-[12px] lg:text-[14px] placeholder:text-[#5a5a5a] focus:outline-none focus:ring-2 focus:ring-[#e97737] resize-none"
@@ -94,10 +124,18 @@ export default function EnquiryForm() {
           {/* Submit Button */}
           <button
             type="submit"
+             disabled={isSubmitting}
             className="w-full bg-[#e97737] hover:bg-[#d86628] text-white font-bold font-['Figtree'] text-[12px] lg:text-[14px] py-2 rounded-sm transition-colors duration-200"
           >
-            SUBMIT
+             {isSubmitting ? "SUBMITTING..." : "SUBMIT"}
           </button>
+
+          {submitStatus === "success" && (
+                  <p className="text-green-600 text-xs text-center">Thank you! We&apos;ll contact you soon.</p>
+                )}
+                {submitStatus === "error" && (
+                  <p className="text-red-600 text-xs text-center">Something went wrong. Please try again.</p>
+                )}
         </form>
       </div>
     </div>

@@ -1,6 +1,53 @@
+"use client"
+
 import { Facebook, Linkedin, Instagram, Youtube, MapPin, Phone, Mail, Users, MessageSquare } from "lucide-react"
+import { useState } from "react"
+
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx0bw21rDwtTlaYtvuSpiFe9iprzsCYqGaIllZSL6kCUPJSAnV0WYSGoUShB4x8HQeGqA/exec"
 
 export default function Footer() {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        message: "",
+      })
+    
+       const [isSubmitting, setIsSubmitting] = useState(false)
+      const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+
+      const handleSubmit = async (e: React.FormEvent) => {
+          e.preventDefault()
+          setIsSubmitting(true)
+          setSubmitStatus("idle")
+      
+          try {
+            const formDataToSend = new URLSearchParams()
+            formDataToSend.append("name", formData.name)
+            formDataToSend.append("phone", formData.phone)
+            formDataToSend.append("message", formData.message)
+            formDataToSend.append("source", "Footer Section")
+            formDataToSend.append("timestamp", new Date().toISOString())
+      
+            // Send directly to Google Apps Script Web App
+            await fetch(GOOGLE_SCRIPT_URL, {
+              method: "POST",
+              body: formDataToSend,
+              mode: "no-cors", // Required for cross-origin requests to Google Apps Script
+            })
+      
+            // Since mode is "no-cors", we can't read the response, so assume success
+            setSubmitStatus("success")
+            setFormData({ name: "", phone: "", message: "" })
+          } catch (error) {
+            console.error("Error submitting form:", error)
+            setSubmitStatus("error")
+          } finally {
+            setIsSubmitting(false)
+          }
+        }
+
+
   return (
     <footer className="w-full bg-[#E9FBFF] border-t border-gray-200">
       {/* Main Footer Content */}
@@ -145,7 +192,7 @@ export default function Footer() {
           {/* Column 4 - Contact Form */}
           <div>
             <h3 className="text-lg font-bold text-[#1a2f46] mb-4">Get Yatra Details</h3>
-            <form className="space-y-3">
+            <form onSubmit={handleSubmit}  className="space-y-3">
               {/* Name */}
               <div className="relative">
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[#e97737]">
@@ -158,6 +205,8 @@ export default function Footer() {
                   type="text"
                   placeholder="Name*"
                   required
+                   value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#e97737] focus:ring-1 focus:ring-[#e97737] bg-white"
                 />
               </div>
@@ -171,12 +220,14 @@ export default function Footer() {
                   type="tel"
                   placeholder="Phone No.*"
                   required
+                   value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#e97737] focus:ring-1 focus:ring-[#e97737] bg-white"
                 />
               </div>
 
               {/* No. of Travellers */}
-              <div className="relative">
+              {/* <div className="relative">
                 <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[#e97737]">
                   <Users className="w-4 h-4" />
                 </div>
@@ -185,7 +236,7 @@ export default function Footer() {
                   placeholder="No. of Travellers"
                   className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#e97737] focus:ring-1 focus:ring-[#e97737] bg-white"
                 />
-              </div>
+              </div> */}
 
               {/* Message */}
               <div className="relative">
@@ -195,6 +246,8 @@ export default function Footer() {
                 <textarea
                   placeholder="Your Message"
                   rows={3}
+                   value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-[#e97737] focus:ring-1 focus:ring-[#e97737] bg-white resize-none"
                 />
               </div>
@@ -202,10 +255,18 @@ export default function Footer() {
               {/* Submit Button */}
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="bg-[#1a2f46] hover:bg-[#0f1d2d] text-white px-8 py-2.5 rounded-lg font-semibold text-sm transition-colors"
               >
-                SUBMIT
+                 {isSubmitting ? "SUBMITTING..." : "SUBMIT"}
               </button>
+
+              {submitStatus === "success" && (
+                  <p className="text-green-600 text-xs text-center">Thank you! We&apos;ll contact you soon.</p>
+                )}
+                {submitStatus === "error" && (
+                  <p className="text-red-600 text-xs text-center">Something went wrong. Please try again.</p>
+                )}
             </form>
           </div>
         </div>
