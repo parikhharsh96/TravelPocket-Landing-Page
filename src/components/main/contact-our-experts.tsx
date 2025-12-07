@@ -108,7 +108,7 @@ export default function ContactOurExperts() {
 
               {/* Footer Text */}
               <p className="text-center font-['Figtree'] text-[10px] lg:text-[12px] font-semibold md:text-base text-[#1a2f46] mt-3 sm:mt-4">
-                We'll get in touch within 30 minutes. Happy to assist you.
+                We&apos;ll get in touch within 30 minutes. Happy to assist you.
               </p>
             </div>
           </div>
