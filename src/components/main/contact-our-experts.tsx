@@ -138,7 +138,7 @@ export default function ContactOurExperts() {
                 </button>
 
                 {submitStatus === "success" && (
-                  <p className="text-green-600 text-xs text-center">Thank you! We'll contact you soon.</p>
+                  <p className="text-green-600 text-xs text-center">Thank you! We&apos;ll contact you soon.</p>
                 )}
                 {submitStatus === "error" && (
                   <p className="text-red-600 text-xs text-center">Something went wrong. Please try again.</p>

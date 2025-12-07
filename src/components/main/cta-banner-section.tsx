@@ -25,7 +25,7 @@ export default function CtaBannerSection() {
 
           {/* Text */}
           <p className="text-center text-gray-700 text-sm sm:text-base md:text-lg mb-6 max-w-2xl">
-            Kailash Awaits. Your Blessings Await. Don't just dream about Kailash, make it a reality with the most
+            Kailash Awaits. Your Blessings Await. Don&apos;t just dream about Kailash, make it a reality with the most
             trusted name in pilgrimage travel in 2026.
           </p>
 
