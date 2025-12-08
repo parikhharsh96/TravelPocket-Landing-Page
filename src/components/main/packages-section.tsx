@@ -3,11 +3,12 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { useState, useEffect } from "react"
+import { useContactModal } from "./contact-modal"
 
 const packages = [
   {
     id: "helicopter",
-    icon: "🚁",
+    icon: "helicopter",
     title: "Kailash Mansarovar Yatra 2026 | By Helicopter from Lucknow",
     duration: "10 Nights / 11 Days",
     image: "/images/package1.svg",
@@ -48,7 +49,7 @@ const packages = [
   },
   {
     id: "kathmandu",
-    icon: "🚌",
+    icon: "bus",
     title: "Kailash Mansarovar Yatra 2026 | By Bus from Kathmandu",
     duration: "14 Nights / 15 Days",
     image:  "/images/package2.svg",
@@ -89,7 +90,7 @@ const packages = [
   },
   {
     id: "lhasa",
-    icon: "✈️",
+    icon: "plane",
     title: "Kailash Mansarovar Yatra 2026 | Lhasa Route via Flight",
     duration: "10 Nights / 11 Days",
     image: "/images/package3.svg",
@@ -128,7 +129,7 @@ const packages = [
   },
   {
     id: "door-darshan",
-    icon: "🏔️",
+    icon: "mountain",
     title: "Kailash Mansarovar Door Darshan Yatra 2026 | via Limi-Lapcha Route",
     duration: "3 Nights / 8 Days",
     image:  "/images/package4.svg",
@@ -161,6 +162,7 @@ const packages = [
 
 export default function PackagesSection() {
   const [activePackage, setActivePackage] = useState("helicopter")
+  const { openModal } = useContactModal()
 
   useEffect(() => {
     const observerOptions = {
@@ -197,23 +199,10 @@ export default function PackagesSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen overflow-x-hidden overflow-y-visible">
-      {/* Background Image - Contained within section */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/packages-background.svg"
-          alt="Kailash Mountain Background"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0" />
-      </div>
+    <>
 
-      {/* Content Container */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-12 lg:py-20">
-        {/* Header */}
-        <div className="text-center mb-12">
+    {/* Header */}
+        <div className="text-center mb-12 mt-8">
           <p className="font-['Figtree'] text-[12px] lg:text-[14px] font-semibold md:text-base text-[#1a2f46] mb-2">Our Best Offerings And Packages</p>
           <h2 className="font-['Playfair_Display'] text-[20px] lg:text-[30px] font-bold text-[#1a2f46] mb-2">
             Best Kailash Kailash Mansarovar Yatra 2026
@@ -225,11 +214,18 @@ export default function PackagesSection() {
             />
         </div>
 
+    <section className="relative bg-fixed bg-center bg-cover"
+    style={{ backgroundImage: "url('/images/packages-background.svg')" }}>
+      
+      {/* Content Container */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-12 lg:py-20">
+        
+
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-12 gap-6 lg:gap-8">
+        <div className="lg:flex gap-4 sm:gap-6 lg:gap-8">
           {/* Left Navigation - Sticky */}
-          <div className="lg:col-span-3">
-            <div className=" flex flex-col items-stretch lg:items-start sm:w-full lg:sticky lg:top-24 space-y-2 sm:space-y-3 overflow-x-hidden">
+          <div className="w-full lg:w-1/4 mb-6 lg:mb-0">
+            <div className="space-y-2 sm:space-y-3 lg:sticky lg:top-24">
               {packages.map((pkg) => (
                 <a
                   key={pkg.id}
@@ -263,14 +259,16 @@ export default function PackagesSection() {
           </div>
 
           {/* Right Scrollable Content */}
-          <div className="lg:col-span-9">
-            <div className="space-y-6 max-h-[800px] lg:max-h-[700px] overflow-y-auto pr-2 sm:pr-4 custom-scrollbar w-fit">
+          <div className="w-full lg:w-3/4">
+            <div className="space-y-4 sm:space-y-6">
               {packages.map((pkg) => (
                 <div key={pkg.id} id={pkg.id} className="bg-white rounded-2xl shadow-xl overflow-hidden scroll-mt-6">
                   {/* Package Header */}
                   <div className="p-4 sm:p-6">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl sm:text-3xl flex-shrink-0">{pkg.icon}</span>
+                      <span className="text-2xl sm:text-3xl flex-shrink-0">
+                        <img src={'images/'+pkg.icon + '.svg'} />
+                      </span>
                       <h3 className="font-['Playfair_Display'] text-[16px] lg:text-[22px] font-bold text-[#1a2f46] mb-2">{pkg.title}</h3>
                     </div>
                   </div>
@@ -306,16 +304,9 @@ export default function PackagesSection() {
                       <div className="grid md:grid-cols-2 gap-3 sm:gap-4 mb-2">
                         {pkg.features.map((feature, idx) => (
                           <div key={idx} className="flex gap-3 items-start">
-                            <div className="w-6 h-6 rounded-full bg-[#e97737] flex items-center justify-center flex-shrink-0 mt-0.5">
-                              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={2.5}
-                                  d="M5 13l4 4L19 7"
-                                />
-                              </svg>
-                            </div>
+                            
+                              <img src='images/checkmark.svg' />
+                            
                             <div className="flex-1 min-w-0">
                               <p className="font-['Figtree'] text-[11px] lg:text-[13px] font-bold md:text-base text-[#1a2f46] mb-2">
                                 {feature.title}
@@ -329,7 +320,8 @@ export default function PackagesSection() {
                       {/* CTA Section */}
                       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-gray-300 mt-auto mb-4">
                         <p className="text-[#29a4c1] font-['Dancing_Script'] font-bold text-[16px] lg:text-[18px]">Get Best Discounts!</p>
-                        <Button className="bg-[#e97737] hover:bg-[#d66a2a] font-['Figtree'] text-white font-bold text-[10px] lg:text-[12px] px-6 lg:px-4 py-5 lg:py-6  whitespace-nowrap rounded-sm">
+                        <Button className="bg-[#e97737] hover:bg-[#d66a2a] font-['Figtree'] text-white font-bold text-[10px] lg:text-[12px] px-6 lg:px-4 py-5 lg:py-6  whitespace-nowrap rounded-sm"
+                        onClick={openModal}>
                           ENQUIRE NOW FOR BEST PRICE
                         </Button>
                       </div>
@@ -359,5 +351,6 @@ export default function PackagesSection() {
         }
       `}</style>
     </section>
+    </>
   )
 }

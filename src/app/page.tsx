@@ -15,6 +15,8 @@ import Image from "next/image";
 
 
 export default function Home() {
+
+  
   return (
     <div className="">
       <HomeHeroSection/>
@@ -34,3 +36,20 @@ export default function Home() {
     
   );
 }
+
+export const metadata = {
+  title: "Kailash Mansarovar Yatra 2026 | TravelPocket",
+  description: "Best Kailash Yatra packages with TravelPocket...",
+  keywords: ["Kailash Yatra","Kailash Mansarovar Yatra", "Kailash Mansarovar Yatra 2026",
+     "Mount Kailash Tour", "TravelPocket","कैलाश यात्रा", " कैलाश मानसरोवर यात्रा 2026", "Kailash Mansarovar Yatra Cost","Kailash Mansarovar Yatra helicopter", "Kailash Mansarovar Yatra from Mumbai"],
+  openGraph: {
+    title: "Kailash Mansarovar Yatra 2026 By TravelPocket",
+    description: "Premium-managed Kailash Mansarovar Yatra package 2026",
+    url: "https://landing.travelpocket.co.in/",
+    images: ["/images/home-section-bg-mob.png"],
+  },
+  alternates: {
+    canonical: "https://landing.travelpocket.co.in/",
+  },
+};
+

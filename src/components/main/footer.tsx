@@ -57,12 +57,7 @@ export default function Footer() {
           <div className="space-y-6">
             {/* Logo */}
             <div>
-              <h2 className="text-2xl font-bold">
-                <span className="text-[#29a4c1]">travel</span>
-                <span className="text-[#e97737]">pock</span>
-                <span className="text-[#29a4c1]">et</span>
-              </h2>
-              <p className="text-xs text-gray-500 italic">keep your adventure alive</p>
+              <img src="/images/tp-logo.svg" />
             </div>
 
             {/* Get in Touch */}

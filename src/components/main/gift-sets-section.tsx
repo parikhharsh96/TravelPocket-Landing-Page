@@ -38,6 +38,36 @@ const products = [
         description: "Includes all essentials for spiritual rituals.",
         image: "/images/detailpage/gift-acc.png",
     },
+    {
+        id: 5,
+        name: "T shirt",
+        description: "Includes all essentials for spiritual rituals.",
+        image: "/images/detailpage/gift-acc.png",
+    },
+    {
+        id: 6,
+        name: "Cap",
+        description: "Includes all essentials for spiritual rituals.",
+        image: "/images/detailpage/gift-acc.png",
+    },
+    {
+        id: 7,
+        name: "Poncho",
+        description: "Includes all essentials for spiritual rituals.",
+        image: "/images/detailpage/gift-acc.png",
+    },
+    {
+        id: 8,
+        name: "Certificate",
+        description: "Includes all essentials for spiritual rituals.",
+        image: "/images/detailpage/gift-acc.png",
+    },
+    {
+        id: 9,
+        name: "Selling Bag",
+        description: "Includes all essentials for spiritual rituals.",
+        image: "/images/detailpage/gift-acc.png",
+    },
 ]
 
 export default function GiftSetsSection() {

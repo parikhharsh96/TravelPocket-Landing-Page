@@ -31,20 +31,6 @@ export default function ComparisonSection() {
       },
     },
     {
-      icon: <Church className="w-6 h-6" />,
-      title: "Diraphuk Experience",
-      subtitle: "Sacred time at holy site",
-      travelpocket: {
-        title: "Dedicated Full Day at Diraphuk",
-        description:
-          "Exclusive time for meditation, reflection, and optional Charan Sparsh (if permitted by authorities)",
-      },
-      others: {
-        title: "No Special Provision",
-        description: "Rush through Diraphuk with minimal time for spiritual activities",
-      },
-    },
-    {
       icon: <Headphones className="w-6 h-6" />,
       title: "Professional Guidance",
       subtitle: "Expert support throughout",

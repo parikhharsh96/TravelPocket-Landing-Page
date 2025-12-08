@@ -189,7 +189,7 @@ export default function Header({ bgColor, rounded, showSearch = false }: HeaderP
                     
                     <div className="text-white font-['Figtree'] text-[12px] md:text-[14px] font-semibold leading-[24px] uppercase"
                     onClick={openModal}>
-                      <span >Book Now</span>
+                      <span >Enquire Now</span>
                      
                     </div>
                   </div>
