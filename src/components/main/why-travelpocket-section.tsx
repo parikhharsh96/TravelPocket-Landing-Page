@@ -145,7 +145,7 @@ export default function WhyTravelPocketSection() {
   }, []);
 
   return (
-    <section className="bg-white py-8">
+    <section id="why-us" className="bg-white py-8">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12">
@@ -178,7 +178,7 @@ export default function WhyTravelPocketSection() {
           </div>
 
           {/* RIGHT: Features Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => {
               return (
                 <div

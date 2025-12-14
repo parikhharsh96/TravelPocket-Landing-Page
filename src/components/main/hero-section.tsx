@@ -163,27 +163,27 @@ export default function HomeHeroSection() {
   }
 
   return (
-    <div className="bg-[#ffffff]">
+    <div id="home" className="bg-[#ffffff]">
       {/* Top Banner */}
       <div className="bg-[#242A3A]  px-4 text-center">
-        <div className="flex flex-col sm:inline-flex sm:flex-row items-center gap-1 lg:gap-2">
+        <div className="flex flex-row justify-center items-center gap-2 lg:gap-2">
           <div className="flex items-center gap-2">
             <img src="/images/microphone.gif" alt="Announcement" className="w-6 h-6" />
-            <span className="text-white font-['Figtree'] text-[10px] lg:text-[12px] font-normal leading-normal">Registrations Now Open for <span className="font-semibold">Kailash Mansarovar Yatra 2026 Parikrama!</span> Secure your seat
+            <span className="text-white font-['Figtree'] text-[8px] lg:text-[12px] font-normal leading-normal">Registrations Now Open for <span className="font-semibold">Kailash Mansarovar Yatra 2026 Parikrama!</span> Secure your seat
               today!</span>
           </div>
           
-            <span className="text-white font-['Figtree'] text-[10px] lg:text-[12px] font-semibold leading-normal underline underline-offset-auto decoration-solid uppercase">REGISTER NOW</span>
+            <div className="text-white basis-[30%] lg:basis-auto lg:w-auto font-['Figtree'] text-[8px] lg:text-[12px] font-semibold leading-normal underline underline-offset-auto decoration-solid uppercase">REGISTER NOW</div>
           
         </div>
       </div>
 
       {/* Background Image Container with Overlay */}
       <div
-        className="bg-gradient-to-b from-[#1a2f46] to-[#21315d] bg-cover bg-center bg-no-repeat relative bg-[url('/images/home-section-bg-mob.png')] md:bg-[url('/images/home-section-bg-mob.png')] lg:bg-[url('/images/home-section-bg.svg')]"
+        className="bg-gradient-to-b from-[#1a2f46] to-[#21315d] bg-cover bg-center bg-no-repeat relative bg-[url('/images/home-section-mob-bg.svg')] md:bg-[url('/images/home-section-bg.svg')] lg:bg-[url('/images/home-section-bg.svg')]"
       >
         {/* Dark overlay for better text contrast */}
-        {/* <div className="absolute inset-0 bg-black/30"></div> */}
+        {/* <div className="absolute inset-0 bg-black/15"></div> */}
 
         {/* Content with relative positioning */}
         <div className="relative z-10">
@@ -302,7 +302,7 @@ export default function HomeHeroSection() {
               {/* Main Content */}
               <div className="lg:col-span-2 text-center lg:text-left">
                 <div className=" mb-4 lg:mb-8 rounded-lg p-4 sm:p-8 text-center lg:text-left ">
-                  <h1 className="text-white font-bold text-[30px] lg:text-[50px]">
+                  <h1 className="text-white font-['Playfair_Display'] font-bold text-[30px] lg:text-[50px]">
   Kailash Mansarovar <br />
   Yatra 2026
 </h1>
@@ -331,7 +331,7 @@ export default function HomeHeroSection() {
         </div>
       </div>
 
-      <section className="container mx-auto lg:hidden"> {/**max-w-[1920px] */}
+      {/* <section className="container mx-auto lg:hidden"> 
         <div className="w-full fixed bottom-0 left-0 right-0 z-100">
           <div className="bg-[#D06225] px-4 py-3">
             <div className="flex flex-row justify-between">
@@ -350,7 +350,7 @@ export default function HomeHeroSection() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

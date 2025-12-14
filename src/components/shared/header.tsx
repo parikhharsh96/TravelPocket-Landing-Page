@@ -107,12 +107,12 @@ export default function Header({ bgColor, rounded, showSearch = false }: HeaderP
 
     const navLinks = ["Home", "Why Us", "Packages", "Gifts","Testimonials","Reach us On Whatsapp"];
     const topLinks = [
-        { label: "Home", href: "/blogs" },
-        { label: "Why Us", href: "/rewards" },
-        { label: "Packages", href: "/offers" },
-        { label: "Gifts", href: "/faqs" },
-        { label: "Testimonials", href: "/contact-us" },
-        { label: "Reach us On Whatsapp", href: "/contact-us" },
+        { label: "Home", href: "#home" },
+        { label: "Why Us", href: "#why-us" },
+        { label: "Packages", href: "#packages" },
+        { label: "Gifts", href: "#gifts" },
+        { label: "Testimonials", href: "#testimonials" },
+        { label: "Reach us On Whatsapp", href: "#whatsapp" },
     ];
     const icons = [
         ...(!showSearch ? ["magnifiying-glass"] : []),
@@ -173,7 +173,7 @@ export default function Header({ bgColor, rounded, showSearch = false }: HeaderP
 
                             <div className="flex items-center justify-center gap-1 sm:gap-2 text-[10px] md:text-[10px] lg:text-[12px] font-semibold uppercase text-[#333] group hover:text-[#e97737] 
                             cursor-pointer" key={item.label}>
-                                        <span>{item.label}</span>
+                                        <a href={item.href}>{item.label}</a>
                                      
                                     </div>
                             
@@ -187,9 +187,10 @@ export default function Header({ bgColor, rounded, showSearch = false }: HeaderP
                     <Button className="bg-[#e97737] hover:bg-[#c75414] px-2 sm:px-4">
                   <div className="flex items-center gap-2">
                     
-                    <div className="text-white font-['Figtree'] text-[12px] md:text-[14px] font-semibold leading-[24px] uppercase"
+                    <div className="text-white flex gap-2 items-center font-['Figtree'] text-[12px] md:text-[14px] font-semibold leading-[24px] uppercase"
                     onClick={openModal}>
-                      <span >Enquire Now</span>
+                      <img src="/images/call.svg" alt="call" className="w-4 h-4" />
+                      <span >Contact Us</span>
                      
                     </div>
                   </div>

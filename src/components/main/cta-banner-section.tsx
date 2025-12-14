@@ -21,7 +21,7 @@ export default function CtaBannerSection() {
         <div className="absolute inset-0 bg-white/30"></div>
 
         {/* Content - Centered */}
-        <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pb-6">
           
           
         <img

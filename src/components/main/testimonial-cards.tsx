@@ -91,7 +91,7 @@ export default function TestimonialCards() {
     };
 
     return (
-        <section className="container mx-auto px-4 pb-[25px] sm:px-6 md:px-8 lg:px-[50px] mb-12 mt-12">
+        <section id="testimonials" className="container mx-auto px-4 pb-[25px] sm:px-6 md:px-8 lg:px-[50px] mb-12 mt-12">
 
             <div className="flex flex-col gap-4">
                 <div className="text-center mb-12">

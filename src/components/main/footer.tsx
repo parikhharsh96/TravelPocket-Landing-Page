@@ -160,19 +160,19 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold text-[#1a2f46] mb-4">Explore QuickLinks</h3>
             <nav className="space-y-3">
-              <a href="#" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
+              <a href="#home" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
                 Home
               </a>
-              <a href="#" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
+              <a href="#why-us" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
                 Why Us
               </a>
-              <a href="#" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
+              <a href="#packages" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
                 Packages
               </a>
-              <a href="#" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
+              <a href="#gifts" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
                 Gifts
               </a>
-              <a href="#" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
+              <a href="#testimonials" className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors">
                 Testimonials
               </a>
               <a

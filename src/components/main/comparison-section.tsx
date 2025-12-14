@@ -109,6 +109,7 @@ export default function ComparisonSection() {
         </div>
 
         {/* Best Value Banner - Desktop */}
+        
         <div className="hidden lg:block mb-0">
           <div className="grid grid-cols-12">
             {/* Empty space above Features */}
@@ -127,8 +128,13 @@ export default function ComparisonSection() {
         </div>
 
         {/* Comparison Table */}
-        <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden relative lg:rounded-tl-none">
-          <div className="hidden lg:block">
+
+        <div className="relative">
+            <div className="overflow-x-auto lg:overflow-visible">
+              <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden lg:rounded-tl-none min-w-[900px]">
+                <div className="">
+
+                 
             {/* Column Headers */}
             <div className="grid grid-cols-12 border-b-2 border-gray-200">
               {/* Features Column - Light blue background */}
@@ -158,32 +164,14 @@ export default function ComparisonSection() {
                 <h3 className="text-lg lg:text-xl font-bold text-[#1a2f46]">Other Companies</h3>
               </div>
             </div>
-          </div>
 
-          {/* Mobile Header */}
-          <div className="lg:hidden bg-gradient-to-br from-[#fff0e8] to-white p-4 relative pt-10">
-            <div
-              className="absolute top-0 left-1/2 -translate-x-1/2 bg-[#e97737] text-white text-center py-2 px-6 text-xs font-semibold rounded-t-lg shadow-md"
-              style={{ width: "60%", maxWidth: "200px" }}
-            >
-              Best Value
-            </div>
-            <div className="text-center">
-              <div>
-                <span className="text-xl font-bold text-[#29a4c1]">travel</span>
-                <span className="text-xl font-bold text-[#1a2f46]">pocket</span>
-              </div>
-              <p className="text-xs text-gray-600">keep your adventure alive</p>
-            </div>
-          </div>
-
-          {/* Feature Rows */}
+            {/* Feature Rows */}
           {features.map((feature, index) => (
             <div key={index} className="border-b border-gray-200 last:border-b-0">
               {/* Desktop Layout */}
-              <div className="hidden lg:grid lg:grid-cols-12">
+              <div className="grid grid-cols-12">
                 {/* Feature Column */}
-                <div className="lg:col-span-3 p-4 lg:p-6 bg-[#ddf9ff] border-r border-gray-200">
+                <div className="col-span-3 p-4 lg:p-6 bg-[#ddf9ff] border-r border-gray-200">
                   <div className="flex items-start gap-3">
                     <div className="text-[#29a4c1] flex-shrink-0 mt-1">{feature.icon}</div>
                     <div>
@@ -194,7 +182,7 @@ export default function ComparisonSection() {
                 </div>
 
                 {/* TravelPocket Column */}
-                <div className="lg:col-span-5 p-4 lg:p-6 border-r border-gray-200">
+                <div className="col-span-5 p-4 lg:p-6 border-r border-gray-200">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#4bae4f] flex items-center justify-center">
                       <Check className="w-4 h-4 text-white" />
@@ -211,7 +199,7 @@ export default function ComparisonSection() {
                 </div>
 
                 {/* Other Companies Column */}
-                <div className="lg:col-span-4 p-4 lg:p-6 bg-gray-50">
+                <div className="col-span-4 p-4 lg:p-6 bg-gray-50">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#d65a5a] flex items-center justify-center">
                       <X className="w-4 h-4 text-white" />
@@ -224,46 +212,19 @@ export default function ComparisonSection() {
                 </div>
               </div>
 
-              {/* Mobile Layout */}
-              <div className="lg:hidden">
-                {/* Feature Title */}
-                <div className="p-3 sm:p-4 bg-[#ddf9ff] flex items-start gap-3">
-                  <div className="text-[#29a4c1] flex-shrink-0 mt-1">{feature.icon}</div>
-                  <div>
-                    <h4 className="font-bold text-[#1a2f46] text-sm mb-1">{feature.title}</h4>
-                    <p className="text-xs text-gray-600">{feature.subtitle}</p>
-                  </div>
-                </div>
-
-                {/* TravelPocket */}
-                <div className="p-3 sm:p-4 border-b border-gray-200">
-                  <div className="flex items-start gap-2">
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#4bae4f] flex items-center justify-center">
-                      <Check className="w-3 h-3 text-white" />
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-[#1a2f46] text-xs sm:text-sm mb-1">{feature.travelpocket.title}</h5>
-                      <p className="text-xs text-gray-700 leading-relaxed">{feature.travelpocket.description}</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Other Companies */}
-                <div className="p-3 sm:p-4 bg-gray-50">
-                  <div className="flex items-start gap-2">
-                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-[#d65a5a] flex items-center justify-center">
-                      <X className="w-3 h-3 text-white" />
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-[#1a2f46] text-xs sm:text-sm mb-1">{feature.others.title}</h5>
-                      <p className="text-xs text-gray-700 leading-relaxed">{feature.others.description}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           ))}
+          </div>
+
+         
+
+          
+              </div>
+            </div>
         </div>
+
+        
       </div>
     </section>
   )

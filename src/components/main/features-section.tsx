@@ -37,7 +37,7 @@ export default function FeaturesSection() {
           What Sets us Apart
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-6">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center space-y-4">
               <div className={`${feature.iconColor} mb-2`}>

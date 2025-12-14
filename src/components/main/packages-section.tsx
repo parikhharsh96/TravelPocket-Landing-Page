@@ -202,7 +202,7 @@ export default function PackagesSection() {
     <>
 
     {/* Header */}
-        <div className="text-center mb-12 mt-8">
+        <div id="packages" className="text-center mb-12 mt-8">
           <p className="font-['Figtree'] text-[12px] lg:text-[14px] font-semibold md:text-base text-[#1a2f46] mb-2">Our Best Offerings And Packages</p>
           <h2 className="font-['Playfair_Display'] text-[20px] lg:text-[30px] font-bold text-[#1a2f46] mb-2">
             Best Kailash Kailash Mansarovar Yatra 2026
@@ -225,7 +225,7 @@ export default function PackagesSection() {
         <div className="lg:flex gap-4 sm:gap-6 lg:gap-8">
           {/* Left Navigation - Sticky */}
           <div className="w-full lg:w-1/4 mb-6 lg:mb-0">
-            <div className="space-y-2 sm:space-y-3 lg:sticky lg:top-24">
+            <div className="grid grid-cols-2 lg:grid-cols-1 gap-2 sm:gap-3 lg:sticky lg:top-24">
               {packages.map((pkg) => (
                 <a
                   key={pkg.id}
@@ -274,10 +274,10 @@ export default function PackagesSection() {
                   </div>
 
                   {/* Package Content - Image Left, Features Right */}
-                  <div className="grid lg:grid-cols-[1fr_1.5fr] gap-0 px-2 lg:px-6">
+                  <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8 lg:gap-4 px-2 lg:px-6">
                     {/* Image Section */}
-                    <div className="relative h-80 lg:h-auto min-h-[400px]">
-                      <img src={pkg.image || "/placeholder.svg"} alt={pkg.title}  className="object-cover" />
+                    <div className="relative lg:h-auto min-h-[400px]">
+                      <img src={pkg.image || "/placeholder.svg"} alt={pkg.title}  className="object-cover w-full lg:max-w-none" />
                       {/* Duration Badge on Image */}
                       <div className="absolute top-0 left-0 bg-[#e97737] text-white px-4 py-2 rounded-sm text-sm font-medium shadow-lg">
                         Duration {pkg.duration}
@@ -308,18 +308,18 @@ export default function PackagesSection() {
                               <img src='images/checkmark.svg' />
                             
                             <div className="flex-1 min-w-0">
-                              <p className="font-['Figtree'] text-[11px] lg:text-[13px] font-bold md:text-base text-[#1a2f46] mb-2">
+                              <p className="font-['Figtree'] text-[13px] lg:text-[13px] font-bold md:text-base text-[#1a2f46] mb-2">
                                 {feature.title}
                               </p>
-                              <p className="font-['Figtree'] text-[9px] lg:text-[11px] font-normal md:text-base text-[#1a2f46] mb-2">{feature.description}</p>
+                              <p className="font-['Figtree'] text-[11px] lg:text-[11px] font-normal md:text-base text-[#1a2f46] mb-2">{feature.description}</p>
                             </div>
                           </div>
                         ))}
                       </div>
 
                       {/* CTA Section */}
-                      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-gray-300 mt-auto mb-4">
-                        <p className="text-[#29a4c1] font-['Dancing_Script'] font-bold text-[16px] lg:text-[18px]">Get Best Discounts!</p>
+                      <div className="flex flex-col sm:flex-row items-center justify-between gap -2 lg:gap-4 pt-4 border-t border-gray-300 mt-auto mb-4">
+                        <p className="text-[#29a4c1] font-['Dancing_Script'] font-bold text-[20px] lg:text-[18px]">Get Best Discounts!</p>
                         <Button className="bg-[#e97737] hover:bg-[#d66a2a] font-['Figtree'] text-white font-bold text-[10px] lg:text-[12px] px-6 lg:px-4 py-5 lg:py-6  whitespace-nowrap rounded-sm"
                         onClick={openModal}>
                           ENQUIRE NOW FOR BEST PRICE

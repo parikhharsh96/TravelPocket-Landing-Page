@@ -5,10 +5,10 @@ import { User, Sparkles } from "lucide-react"
 export default function KailashFireHorseSection() {
   return (
     <div className="bg-[#ffffff]">
-         <div className="bg-[#fff0e8] py-16 px-4  mx-auto m-[0_2rem]">
+         <div className="bg-[#fff0e8] py-6 lg:py-8 px-4  mx-auto m-[0_2rem]">
       <div className="max-w-7xl mx-auto m-4">
         {/* Header Section */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <p className="font-['Figtree'] text-[12px] lg:text-[14px] font-semibold md:text-base text-[#1a2f46] mb-2">Highly Auspicious Fire Horse Year</p>
           <h1 className="font-['Playfair_Display'] text-[20px] lg:text-[30px] font-bold text-[#1a2f46] mb-2">
             Kailash Yatra During Fire Horse Year 2026
@@ -27,7 +27,7 @@ export default function KailashFireHorseSection() {
         </div>
 
         {/* Main Content Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 items-center">
           {/* Fire Horse Image */}
           <div className="relative">
             <div className="bg-cover bg-center aspect-video rounded-lg overflow-hidden shadow-xl bg-[url('/images/horse-year.svg')] relative">
@@ -60,7 +60,7 @@ export default function KailashFireHorseSection() {
         </div>
 
         {/* Scrolling Marquee */}
-        <div className="overflow-hidden bg-transparent py-6 mb-16 relative">
+        <div className="overflow-hidden bg-transparent py-2 mb-8 relative">
           <div className="flex animate-marquee whitespace-nowrap">
             <MarqueeContent />
             <MarqueeContent />
@@ -71,9 +71,9 @@ export default function KailashFireHorseSection() {
         </div>
 
         {/* Benefits Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Column - Benefits Lists */}
-          <div className="space-y-10">
+          <div className="space-y-6">
             <div>
               <h2 className="font-['Figtree'] text-[16px] lg:text-[18px] font-bold text-[#1a2f46] mb-4">Extraordinary Spiritual Benefits</h2>
               <div className="space-y-4 font-['Figtree'] text-[10px] lg:text-[12px]">
