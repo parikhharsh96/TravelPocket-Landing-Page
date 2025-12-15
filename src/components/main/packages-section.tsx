@@ -11,40 +11,33 @@ const packages = [
     icon: "helicopter",
     title: "Kailash Mansarovar Yatra 2026 | By Helicopter from Lucknow",
     duration: "10 Nights / 11 Days",
-    image: "/images/package1.svg",
+    image: "/images/by-heli.svg",
     features: [
       {
-        title: "Curated Group Experience",
-        description: "Fixed departures with maximum 35 participants for personalized attention",
+        title: "End-to-End Yatra Management",
+        description: "Complete journey handled from Lucknow to Kailash–Mansarovar & back",
       },
       {
-        title: "Spiritual Immersion",
-        description: "Full day at Draphuk dedicated to Charan Sparsh and meditation",
+        title: "Helicopter-Assisted Travel",
+        description: "Comfortable and time-efficient route, suitable for all age groups",
       },
       {
-        title: "Expert Support",
-        description: "High-altitude specialists and medical assistance throughout the journey",
+        title: "Accommodation",
+        description: "5★ hotel in Lucknow + best available stays during Yatra",
       },
       {
-        title: "Seamless Logistics",
-        description: "Direct management with no intermediaries, priority flight and helicopter access",
+        title: "Meals",
+        description: "Pure vegetarian meals (Jain options available)",
       },
       {
-        title: "Premium Accommodations",
-        description: "4-star stays at Soaltee Western Premium, Kathmandu (or equivalent)",
+        title: "Medical & High-Altitude Support",
+        description: "On-trip medical assistance with experienced Indian Team Leader accompanying the group throughout the journey",
       },
       {
-        title: "Complete Transfers",
-        description: "Complimentary airport/railway station pick-up and drop-off",
+        title: "Spiritual Experience",
+        description: "Charan Sparsh, Mansarovar Parikrama & meditation at Dirapuk",
       },
-      {
-        title: "Culinary Excellence",
-        description: "Hygienically prepared pure vegetarian meals (Jain options available)",
-      },
-      {
-        title: "Comfortable Travel",
-        description: "Air-luxury coach transportation throughout",
-      },
+      
     ],
   },
   {
@@ -55,37 +48,34 @@ const packages = [
     image:  "/images/package2.svg",
     features: [
       {
-        title: "Intimate Group Size",
-        description: "Maximum 35 pilgrims per departure for enhanced devotional atmosphere",
+        title: "End-to-End Yatra Management",
+        description: "Complete journey managed from Kathmandu to Kailash–Mansarovar & return",
+      },
+      {
+        title: "Overland / Bus Journey",
+        description: "Traditional overland route by modern coach, ideal for deeper spiritual immersion",
+      },
+      {
+        title: "Accommodation",
+        description: "4★ hotel stay in Kathmandu + best available accommodations during the Yatra",
+      },
+      {
+        title: "Meals",
+        description: "Hygienically prepared pure vegetarian meals throughout (Jain options available)",
+      },
+      {
+        title: "Medical & High-Altitude Support",
+        description: "Continuous medical assistance with a trained high-altitude team and an experienced Indian Team Leader accompanying the group throughout the Yatra",
       },
       {
         title: "Spiritual Preparation",
-        description: "Sacred Hawan at Pashupatinath Temple, visits to Jal Narayan and Doleshwar Mahadev",
+        description: "Sacred Hawan at Pashupatinath Temple with visits to Jal Narayan & Doleshwar Mahadev",
       },
       {
-        title: "Extended Devotion",
-        description: "Full day at Draphuk for Charan Sparsh and contemplative meditation",
+        title: "Spiritual Experience",
+        description: "Full day at Dirapuk for Charan Sparsh, Mansarovar Parikrama & meditation",
       },
-      {
-        title: "Quality Accommodation",
-        description: "4-star stays at Best Western Kathmandu (or equivalent)",
-      },
-      {
-        title: "Nutritious Meals",
-        description: "Hygienically prepared pure vegetarian meals (Jain options available)",
-      },
-      {
-        title: "Expert Guidance",
-        description: "High-altitude trained team with continuous medical support",
-      },
-      {
-        title: "Premium Transport",
-        description: "Modern Volvo coach with complete door-to-door transfers",
-      },
-      {
-        title: "Direct Management",
-        description: "No intermediaries—seamless service from start to finish",
-      },
+      
     ],
   },
   {
@@ -93,38 +83,49 @@ const packages = [
     icon: "plane",
     title: "Kailash Mansarovar Yatra 2026 | Lhasa Route via Flight",
     duration: "10 Nights / 11 Days",
-    image: "/images/package3.svg",
+    image: "/images/lasha.svg",
     features: [
+      {
+        title: "End-to-End Yatra Management",
+        description:
+          "Complete journey managed from Kathmandu to Kailash–Mansarovar & return via Lhasa route",
+      },
+      {
+        title: "Flight-Assisted Lhasa Route",
+        description:
+          "Comfortable air travel with gradual altitude acclimatization through Lhasa",
+      },
       {
         title: "Cultural Exploration in Lhasa",
         description:
-          "Potala Palace - UNESCO World Heritage Site and spiritual landmark, Jokhang Temple - Tibet's most sacred Buddhist sanctuary, Barkhor Street - Historic pilgrimage circuit and cultural hub",
+          "Potala Palace (UNESCO World Heritage Site), Jokhang Temple & Barkhor Street",
       },
       {
-        title: "Expert Accompaniment",
-        description: "High-altitude specialists and medical professionals throughout",
+        title: "Accommodation",
+        description:
+          "4★ hotel stay in Kathmandu + best available accommodations during the Yatra",
       },
       {
-        title: "Curated Group Experience",
-        description: "Fixed departures with maximum 35 participants for personalized attention",
+        title: "Meals & Transfers",
+        description:
+          "Fresh, hygienic pure vegetarian meals (Jain options available) with complete airport & intercity transfers",
       },
       {
-        title: "Meditation Experience",
-        description: "Full day at Draphuk for sacred rituals and reflection",
+        title: "Medical & High-Altitude Support",
+        description:
+          "High-altitude specialists and medical professionals with an experienced Indian Team Leader accompanying the group throughout the Yatra",
       },
       {
         title: "Spiritual Preparation",
-        description: "Sacred Hawan at Pashupatinath, visits to Jal Narayan and Doleshwar Mahadev",
-      },
-      {
-        title: "Culinary Care & Complete Transfers",
         description:
-          "Fresh, hygienic vegetarian meals (Jain options available), airport pick-up and complimentary transfers",
+          "Sacred Hawan at Pashupatinath with visits to Jal Narayan & Doleshwar Mahadev",
       },
       {
-        title: "Premium Stays",
-        description: "4-star accommodation at Best Western Kathmandu (or similar)",
+        title: "Spiritual Experience",
+        description:
+          "Full day at Drapuk for Charan Sparsh, Mansarovar Parikrama & meditation",
       },
+     
     ],
   },
   {
@@ -132,7 +133,7 @@ const packages = [
     icon: "mountain",
     title: "Kailash Mansarovar Door Darshan Yatra 2026 | via Limi-Lapcha Route",
     duration: "3 Nights / 8 Days",
-    image:  "/images/package4.svg",
+    image:  "/images/by-road.svg",
     idealFor: [
       "Senior pilgrims (70+ age group)",
       "No passport or visa required",
@@ -140,22 +141,38 @@ const packages = [
     ],
     features: [
       {
+        title: "Closest Kailash Darshan Route",
+        description: "India–Nepal border via Limi–Lapcha, with Kailash Darshan point just 7 km from Lake Mansarovar",
+      },
+      {
+        title: "Ideal for Senior Pilgrims",
+        description: "Specially designed for 70+ age group, minimal walking & gradual altitude exposure",
+      },
+      {
+        title: "No Passport / No Visa Required",
+        description: "Indian citizens can undertake the Yatra without passport or visa formalities",
+      },
+      {
         title: "Premium Hospitality",
-        description: "4-star accommodation at Soaltee Western Premium, Kathmandu (or similar)",
+        description: "5★ accommodation in Lucknow (Soaltee Western Premium or similar) with best available stays en route",
       },
       {
         title: "Hassle-Free Travel",
-        description: "Air-luxury coach from Lucknow to Nepalgunj with seamless connections",
+        description: "Air-luxury coach from Lucknow to Nepalgunj with smooth intercity transfers",
       },
       {
-        title: "Comprehensive Support",
-        description: "High-altitude experts and medical assistance at every step",
+        title: "Authentic Vegetarian Meals",
+        description: "Fresh, hygienic pure vegetarian meals (Jain options available)",
       },
       {
-        title: "Authentic Cuisine & Direct Service",
-        description:
-          "Fresh, hygienic vegetarian meals (Jain options available). End-to-end managed pilgrimage with no third-party involvement",
+        title: "Medical & High-Altitude Support",
+        description: "Continuous medical assistance with high-altitude experts and an experienced Indian Team Leader accompanying the group throughout the journey",
       },
+      {
+        title: "End-to-End Managed Yatra",
+        description: "Complete pilgrimage managed in-house with no third-party involvement",
+      },
+     
     ],
   },
 ]
@@ -276,8 +293,8 @@ export default function PackagesSection() {
                   {/* Package Content - Image Left, Features Right */}
                   <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8 lg:gap-4 px-2 lg:px-6">
                     {/* Image Section */}
-                    <div className="relative lg:h-auto min-h-[400px]">
-                      <img src={pkg.image || "/placeholder.svg"} alt={pkg.title}  className="object-cover w-full lg:max-w-none" />
+                    <div className="relative lg:h-auto mb-4">
+                      <img src={pkg.image || "/placeholder.svg"} alt={pkg.title}  className="object-cover w-full lg:max-w-none max-h-[200px] lg:max-h-none lg:h-full" />
                       {/* Duration Badge on Image */}
                       <div className="absolute top-0 left-0 bg-[#e97737] text-white px-4 py-2 rounded-sm text-sm font-medium shadow-lg">
                         Duration {pkg.duration}
