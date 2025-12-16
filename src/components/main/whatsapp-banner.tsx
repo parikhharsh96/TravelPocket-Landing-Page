@@ -19,7 +19,7 @@ export default function WhatsAppBanner() {
 
                 <div className="relative h-full p-4 sm:p-6 md:p-8">
                     {/* Small devices: Single column (icon top, text middle, button bottom) */}
-                    <div className="flex flex-col items-start justify-between h-full sm:hidden">
+                    <div className="flex flex-col items-center justify-between h-full sm:hidden">
 
                         {/* Text in Top */}
                         <div className="text-center font-['Inter']">
@@ -56,7 +56,7 @@ export default function WhatsAppBanner() {
                     {/* Medium devices: 2 columns (text+button left, icon right) */}
                     <div className="hidden sm:grid md:grid lg:hidden grid-cols-2 gap-6 h-full items-center">
                         {/* Left column: Text and Button */}
-                        <div className="flex flex-col justify-center space-y-4">
+                        <div className="flex flex-col justify-center items-center space-y-4">
                             <div className="font-['Inter']">
                                 <div className="font-bold text-black text-lg leading-normal">Yay! Now you can</div>
                                 <div className="flex items-center gap-2 mt-2">
