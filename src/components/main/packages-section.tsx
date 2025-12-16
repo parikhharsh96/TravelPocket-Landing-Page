@@ -12,6 +12,11 @@ const packages = [
     title: "Kailash Mansarovar Yatra 2026 | By Helicopter from Lucknow",
     duration: "10 Nights / 11 Days",
     image: "/images/by-heli.svg",
+    idealFor: [
+      "Pickup: Lucknow",
+      "Duration: 10 Nights / 11 Days",
+      "Group Size: Maximum 35 Yatris",
+    ],
     features: [
       {
         title: "End-to-End Yatra Management",
@@ -46,6 +51,11 @@ const packages = [
     title: "Kailash Mansarovar Yatra 2026 | By Bus from Kathmandu",
     duration: "14 Nights / 15 Days",
     image:  "/images/package2.svg",
+    idealFor: [
+      "Pickup: Kathmandu",
+      "Duration: 14 Nights / 15 Days",
+      "Group Size: Maximum 35 Yatris (Fixed Departures)",
+    ],
     features: [
       {
         title: "End-to-End Yatra Management",
@@ -84,6 +94,11 @@ const packages = [
     title: "Kailash Mansarovar Yatra 2026 | Lhasa Route via Flight",
     duration: "10 Nights / 11 Days",
     image: "/images/lasha.svg",
+     idealFor: [
+      "Pickup: Kathmandu",
+      "Duration: 10 Nights / 11 Days",
+      "Group Size: Maximum 35 Yatris (Fixed Departures)",
+    ],
     features: [
       {
         title: "End-to-End Yatra Management",
@@ -135,9 +150,9 @@ const packages = [
     duration: "3 Nights / 8 Days",
     image:  "/images/by-road.svg",
     idealFor: [
-      "Senior pilgrims (70+ age group)",
-      "No passport or visa required",
-      "Closest access point—just 7 km from Lake Mansarovar",
+      "Pickup: Lucknow",
+      "Duration: 7 Nights / 8 Days",
+      "Group Size: Limited Group (Comfort-Focused Departures)"
     ],
     features: [
       {
@@ -296,9 +311,9 @@ export default function PackagesSection() {
                     <div className="relative lg:h-auto mb-4">
                       <img src={pkg.image || "/placeholder.svg"} alt={pkg.title}  className="object-cover w-full lg:max-w-none max-h-[200px] lg:max-h-none lg:h-full" />
                       {/* Duration Badge on Image */}
-                      <div className="absolute top-0 left-0 bg-[#e97737] text-white px-4 py-2 rounded-sm text-sm font-medium shadow-lg">
+                      {/* <div className="absolute top-0 left-0 bg-[#e97737] text-white px-4 py-2 rounded-sm text-sm font-medium shadow-lg">
                         Duration {pkg.duration}
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* Features Section */}
@@ -306,7 +321,7 @@ export default function PackagesSection() {
                       {/* Ideal For Section (if applicable) */}
                       {pkg.idealFor && (
                         <div className="mb-6 p-4 bg-amber-50 rounded-lg">
-                          <p className="font-semibold text-[#1a2f46] mb-2">Ideal For:</p>
+                          <p className="font-semibold text-[#1a2f46] mb-2">Yatra Overview :</p>
                           <ul className="space-y-1 text-sm">
                             {pkg.idealFor.map((item, idx) => (
                               <li key={idx} className="text-gray-700">
