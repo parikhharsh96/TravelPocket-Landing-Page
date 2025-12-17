@@ -239,9 +239,9 @@ export default function PackagesSection() {
 
     {/* Header */}
         <div id="packages" className="text-center mb-12 mt-8">
-          <p className="font-['Figtree'] text-[12px] lg:text-[14px] font-semibold md:text-base text-[#1a2f46] mb-2">Our Best Offerings And Packages</p>
+          <p className="font-['Figtree'] text-[12px] lg:text-[14px] font-semibold md:text-base text-[#1a2f46] mb-2">Our Best Offerings And Packages for</p>
           <h2 className="font-['Playfair_Display'] text-[20px] lg:text-[30px] font-bold text-[#1a2f46] mb-2">
-            Best Kailash Kailash Mansarovar Yatra 2026
+            Kailash Mansarovar Yatra 2026
           </h2>
           <img
               src="/images/diamond-separator.svg"
