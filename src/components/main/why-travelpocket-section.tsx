@@ -166,7 +166,7 @@ export default function WhyTravelPocketSection() {
         <div className="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 items-start">
           {/* LEFT: YouTube Video */}
           <div className="w-full aspect-[9/16] lg:sticky lg:top-24">
-            <iframe
+            {/* <iframe
               id="yt-autoplay-video"
               className="w-full h-full rounded-lg"
               src="https://www.youtube.com/embed/gLKwYFVEnKI?enablejsapi=1&mute=1"
@@ -174,7 +174,17 @@ export default function WhyTravelPocketSection() {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+
+             <video
+              className="w-full h-full rounded-lg object-cover"
+              src="/videos/why-TP-section-video.mov"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+  />
           </div>
 
           {/* RIGHT: Features Grid */}

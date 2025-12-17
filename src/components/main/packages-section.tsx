@@ -11,7 +11,8 @@ const packages = [
     icon: "helicopter",
     title: "Kailash Mansarovar Yatra 2026 | By Helicopter from Lucknow",
     duration: "10 Nights / 11 Days",
-    image: "/images/by-heli.svg",
+    image: "/images/1.svg",
+    imageMob:"/images/by-heli.svg",
     idealFor: [
       "Pickup: Lucknow",
       "Duration: 10 Nights / 11 Days",
@@ -50,7 +51,8 @@ const packages = [
     icon: "bus",
     title: "Kailash Mansarovar Yatra 2026 | By Bus from Kathmandu",
     duration: "14 Nights / 15 Days",
-    image:  "/images/package2.svg",
+    image:  "/images/2.svg",
+    imageMob:"/images/2.svg",
     idealFor: [
       "Pickup: Kathmandu",
       "Duration: 14 Nights / 15 Days",
@@ -93,7 +95,8 @@ const packages = [
     icon: "plane",
     title: "Kailash Mansarovar Yatra 2026 | Lhasa Route via Flight",
     duration: "10 Nights / 11 Days",
-    image: "/images/lasha.svg",
+    image: "/images/3.svg",
+    imageMob:"/images/3.svg",
      idealFor: [
       "Pickup: Kathmandu",
       "Duration: 10 Nights / 11 Days",
@@ -149,6 +152,7 @@ const packages = [
     title: "Kailash Mansarovar Door Darshan Yatra 2026 | via Limi-Lapcha Route",
     duration: "3 Nights / 8 Days",
     image:  "/images/by-road.svg",
+    imageMob:"/images/by-road.svg",
     idealFor: [
       "Pickup: Lucknow",
       "Duration: 7 Nights / 8 Days",
@@ -309,7 +313,8 @@ export default function PackagesSection() {
                   <div className="grid lg:grid-cols-[1fr_1.5fr] gap-8 lg:gap-4 px-2 lg:px-6">
                     {/* Image Section */}
                     <div className="relative lg:h-auto mb-4">
-                      <img src={pkg.image || "/placeholder.svg"} alt={pkg.title}  className="object-cover w-full lg:max-w-none max-h-[200px] lg:max-h-none lg:h-full" />
+                      <img src={pkg.image || "/placeholder.svg"} alt={pkg.title}  className="hidden lg:block object-cover w-full lg:max-w-none max-h-[200px] lg:max-h-none lg:h-full" />
+                      <img src={pkg.imageMob || "/placeholder.svg"} alt={pkg.title}  className="block lg:hidden object-cover w-full lg:max-w-none max-h-[200px] lg:max-h-none lg:h-full" />
                       {/* Duration Badge on Image */}
                       {/* <div className="absolute top-0 left-0 bg-[#e97737] text-white px-4 py-2 rounded-sm text-sm font-medium shadow-lg">
                         Duration {pkg.duration}
