@@ -68,7 +68,7 @@ export default function ContactOurExperts() {
         <div
           className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-cover rounded-xl sm:rounded-2xl"
           style={{
-            backgroundImage: "url(/images/contact-experts-edited3.svg)",
+            backgroundImage: "url(/images/contact-experts.webp)",
           }}
         >
           {/* Overlay for better contrast */}

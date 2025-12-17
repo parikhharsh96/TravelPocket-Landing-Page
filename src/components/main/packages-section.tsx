@@ -11,8 +11,8 @@ const packages = [
     icon: "helicopter",
     title: "Kailash Mansarovar Yatra 2026 | By Helicopter from Lucknow",
     duration: "10 Nights / 11 Days",
-    image: "/images/1.svg",
-    imageMob:"/images/by-heli.svg",
+    image: "/images/1.webp",
+    imageMob:"/images/package1.webp",
     idealFor: [
       "Pickup: Lucknow",
       "Duration: 10 Nights / 11 Days",
@@ -51,8 +51,8 @@ const packages = [
     icon: "bus",
     title: "Kailash Mansarovar Yatra 2026 | By Bus from Kathmandu",
     duration: "14 Nights / 15 Days",
-    image:  "/images/3.svg",
-    imageMob:"/images/by-road.svg",
+    image:  "/images/2.webp",
+    imageMob:"/images/package2.webp",
     idealFor: [
       "Pickup: Kathmandu",
       "Duration: 14 Nights / 15 Days",
@@ -95,8 +95,8 @@ const packages = [
     icon: "plane",
     title: "Kailash Mansarovar Yatra 2026 | Lhasa Route via Flight",
     duration: "10 Nights / 11 Days",
-    image: "/images/2.svg",
-    imageMob:"/images/2.svg",
+    image: "/images/3.webp",
+    imageMob:"/images/3.webp",
      idealFor: [
       "Pickup: Kathmandu",
       "Duration: 10 Nights / 11 Days",
@@ -151,8 +151,8 @@ const packages = [
     icon: "mountain",
     title: "Kailash Mansarovar Door Darshan Yatra 2026 | via Limi-Lapcha Route",
     duration: "3 Nights / 8 Days",
-    image:  "/images/limi.svg",
-    imageMob:"/images/limi-mob.svg",
+    image:  "/images/4.webp",
+    imageMob:"/images/package4.webp",
     idealFor: [
       "Pickup: Lucknow",
       "Duration: 7 Nights / 8 Days",

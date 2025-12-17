@@ -98,7 +98,7 @@ export default function KailashFireHorseSection() {
           {/* Right Column - Meditation Image */}
           <div className="relative">
             <img
-              src="/images/meditation2.svg"
+              src="/images/meditation3.webp"
               alt="Meditation by mountain lake"
               className="w-full h-auto rounded-lg shadow-xl"
             />
