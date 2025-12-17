@@ -180,7 +180,7 @@ export default function HomeHeroSection() {
 
       {/* Background Image Container with Overlay */}
       <div
-        className="bg-gradient-to-b from-[#1a2f46] to-[#21315d] bg-cover bg-center bg-no-repeat relative bg-[url('/images/header.svg')] md:bg-[url('/images/header.svg')] lg:bg-[url('/images/header.svg')]"
+        className="bg-gradient-to-b from-[#1a2f46] to-[#21315d] bg-cover bg-center bg-no-repeat relative bg-[url('/images/book-open-now.svg')] md:bg-[url('/images/book-open-now.svg')] lg:bg-[url('/images/book-open-now.svg')]"
       >
         {/* Dark overlay for better text contrast */}
         {/* <div className="absolute inset-0 bg-black/15"></div> */}
@@ -302,16 +302,16 @@ export default function HomeHeroSection() {
               {/* Main Content */}
               <div className="lg:col-span-2 text-center lg:text-left">
                 <div className=" mb-4 lg:mb-8 rounded-lg p-4 sm:p-8 text-center lg:text-left ">
-                  <h1 className="text-[#1a2f46] font-['Playfair_Display'] font-bold text-[30px] lg:text-[50px]">
+                  <h1 className="text-white font-['Playfair_Display'] font-bold text-[30px] lg:text-[50px]">
   Kailash Mansarovar <br />
   Yatra 2026
 </h1>
 
-                  <div className="text-[#1a2f46] font-['Figtree'] text-[22px] lg:text-[30px] font-semibold leading-normal mb-6">
+                  <div className="text-white font-['Figtree'] text-[22px] lg:text-[30px] font-semibold leading-normal mb-6">
                     Registrations are {" "}
-                    <span className="bg-[#e97737] text-[#1a2f46] px-2 sm:px-3 py-1 rounded">Open Now</span>
+                    <span className="bg-[#e97737] text-white px-2 sm:px-3 py-1 rounded">Open Now</span>
                   </div>
-                  <div className="text-[#1a2f46]font-['Figtree'] text-[14px] 
+                  <div className="text-white font-['Figtree'] text-[14px] 
                   lg:text-[15px] font-semibold leading-normal mb-4 lg:mb-8 w-full lg:w-[70%]  text-center lg:text-left">
                     Begin your spiritual journey to the abode of Lord Shiva with TravelPocket’s trusted Kailash Mansarovar Yatra packages for 2026. Experience one of the world’s most sacred pilgrimages, crafted with safety, comfort, and guidance from start to finish.
                     </div>

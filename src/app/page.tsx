@@ -45,7 +45,7 @@ export const metadata = {
   openGraph: {
     title: "Kailash Mansarovar Yatra 2026 By TravelPocket",
     description: "Premium-managed Kailash Mansarovar Yatra package 2026",
-    url: "https://landing.travelpocket.co.in/",
+    url: "https://kailashyatra.travelpocket.in/",
     images: ["/images/home-section-bg-mob.png"],
   },
   alternates: {

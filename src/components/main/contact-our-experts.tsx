@@ -63,12 +63,12 @@ export default function ContactOurExperts() {
       </div>
 
       {/* Background Image Section with Contact Form */}
-      <div className=" hidden lg:block relative w-full h-[500px] sm:h-[600px] md:h-[650px] lg:h-[700px] xl:h-[750px]">
+      <div className=" hidden lg:block relative w-full h-[500px] sm:h-[600px] md:h-[650px] lg:h-[600px] xl:h-[750px]">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-cover rounded-xl sm:rounded-2xl"
           style={{
-            backgroundImage: "url(/images/contact-our-experts-4.svg)",
+            backgroundImage: "url(/images/contact-experts-edited3.svg)",
           }}
         >
           {/* Overlay for better contrast */}
@@ -158,7 +158,7 @@ export default function ContactOurExperts() {
         <div className="flex flex-col mb-12">
           <div className="flex justify-center">
             <img
-              src="/images/contact-experts-mob.svg"
+              src="/images/contact-experts-edited3.svg"
               alt="contact our experts"
               className="mx-auto"
             />
