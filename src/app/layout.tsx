@@ -4,6 +4,7 @@ import { Figtree, Playfair_Display, Inter } from "next/font/google";
 import { Dancing_Script } from 'next/font/google';
 import "./globals.css";
 import { ContactModalProvider } from "@/components/main/contact-modal";
+import Script from "next/script";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -49,6 +50,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Ads Global Site Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17801298142"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17801298142');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
