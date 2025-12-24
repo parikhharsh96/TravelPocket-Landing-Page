@@ -97,7 +97,7 @@ export default function TestimonialCards() {
                 <div className="text-center mb-12">
           <p className="font-['Figtree'] text-[12px] lg:text-[14px] font-semibold md:text-base text-[#1a2f46] mb-2">Real People</p>
           <h2 className="font-['Playfair_Display'] text-[20px] lg:text-[30px] font-bold text-[#1a2f46] mb-2">
-            Hapy stories from our travellers
+            Happy stories from our travellers
           </h2>
           <img
               src="/images/diamond-separator.svg"
@@ -130,7 +130,7 @@ export default function TestimonialCards() {
                                     <div className="aspect-[9/16] w-full">
                                         <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/embed/hdyuWgmn_P8"
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -144,22 +144,7 @@ export default function TestimonialCards() {
                                     <div className="aspect-[9/16] w-full">
                                         <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/embed/HXIwQ9OGVhI"                                        
-                                        title="YouTube video player"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                        ></iframe>
-                                    </div>
-                                </div>
-
-
-                                <div className="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-white shadow-md
-                                                    w-[250px] sm:w-[260px] md:w-[280px] lg:w-[300px]">
-                                    <div className="aspect-[9/16] w-full">
-                                        <iframe
-                                        className="w-full h-full"
-                                        src="https://www.youtube.com/embed/N-xdMLlghIA"                                        
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -174,7 +159,7 @@ export default function TestimonialCards() {
                                     <div className="aspect-[9/16] w-full">
                                         <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/embed/F0P1oCQmsns"                                        
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -189,7 +174,52 @@ export default function TestimonialCards() {
                                     <div className="aspect-[9/16] w-full">
                                         <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/embed/zYMzcEDjaJQ"                                        
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+
+
+                                <div className="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-white shadow-md
+                                                    w-[250px] sm:w-[260px] md:w-[280px] lg:w-[300px]">
+                                    <div className="aspect-[9/16] w-full">
+                                        <iframe
+                                        className="w-full h-full"
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+
+
+                                <div className="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-white shadow-md
+                                                    w-[250px] sm:w-[260px] md:w-[280px] lg:w-[300px]">
+                                    <div className="aspect-[9/16] w-full">
+                                        <iframe
+                                        className="w-full h-full"
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+
+
+                                <div className="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-white shadow-md
+                                                    w-[250px] sm:w-[260px] md:w-[280px] lg:w-[300px]">
+                                    <div className="aspect-[9/16] w-full">
+                                        <iframe
+                                        className="w-full h-full"
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -203,7 +233,7 @@ export default function TestimonialCards() {
                                     <div className="aspect-[9/16] w-full">
                                         <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/embed/nSl5KNBdE2o"                                                                           
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -212,12 +242,13 @@ export default function TestimonialCards() {
                                     </div>
                                 </div>
 
+
                                 <div className="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-white shadow-md
                                                     w-[250px] sm:w-[260px] md:w-[280px] lg:w-[300px]">
                                     <div className="aspect-[9/16] w-full">
                                         <iframe
                                         className="w-full h-full"
-                                        src="https://www.youtube.com/embed/qxR070dcM0M"                                                                           
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -225,6 +256,23 @@ export default function TestimonialCards() {
                                         ></iframe>
                                     </div>
                                 </div>
+
+
+                                <div className="flex-shrink-0 snap-start rounded-lg overflow-hidden bg-white shadow-md
+                                                    w-[250px] sm:w-[260px] md:w-[280px] lg:w-[300px]">
+                                    <div className="aspect-[9/16] w-full">
+                                        <iframe
+                                        className="w-full h-full"
+                                        src="https://www.youtube.com/embed/g1wF_EGYlC4"
+                                        title="YouTube video player"
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+
+                                
 
                             
                         </div>

@@ -18,13 +18,13 @@ const products = [
         id: 1,
         name: "Duffel Bag",
         description: "Spacious, durable & travel-ready.",
-        image: "/images/detailpage/bag_img.png",
+         image: "/images/detailpage/gift_jacket.png",
     },
     {
         id: 2,
         name: "Backpack",
         description: "Lightweight & handy for daily yatra use.",
-        image: "/images/detailpage/bagpack_m.png",
+        image: "/images/detailpage/gift_jacket.png",
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ const products = [
         id: 4,
         name: "Puja Samagri Kit",
         description: "Includes all essentials for spiritual rituals.",
-        image: "/images/detailpage/gift-acc.png",
+        image: "/images/detailpage/gift_jacket.png",    
     },
    
 ]
@@ -88,7 +88,7 @@ function ProductCard({ product }: GiftProductCardProps) {
                 {/* Gift Badge - positioned absolutely at top-left for all devices */}
                 <Badge
                     variant="popular"
-                    icon="/images/detailpage/featured_seasonal_and_gifts.svg"
+                    icon="/images/featured_seasonal_and_gifts.svg"
                     className="absolute top-1 left-1 rounded-[4px] bg-[#FCD205]"
                 >
                     <span className="text-[#1A2F46] font-['Figtree'] text-[12px] font-medium leading-[14px] uppercase">Gift</span>

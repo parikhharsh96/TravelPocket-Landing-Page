@@ -180,7 +180,7 @@ export default function HomeHeroSection() {
 
       {/* Background Image Container with Overlay */}
       <div
-        className="bg-gradient-to-b from-[#1a2f46] to-[#21315d] bg-cover bg-center bg-no-repeat relative bg-[url('/images/book-open-now2.webp')] md:bg-[url('/images/book-open-now2.webp')] lg:bg-[url('/images/book-open-now2.webp')]"
+        className="bg-gradient-to-b from-[#1a2f46] to-[#21315d] bg-cover bg-center bg-no-repeat relative bg-[url('/images/home-section-bg.svg')] md:bg-[url('/images/home-section-bg.svg')] lg:bg-[url('/images/home-section-bg.svg')]"
       >
         {/* Dark overlay for better text contrast */}
         {/* <div className="absolute inset-0 bg-black/15"></div> */}

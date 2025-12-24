@@ -44,11 +44,11 @@ export default function CtaBannerSection() {
             </button>
 
             <a
-              href="tel:+917827033601"
+              href="tel:+917977180300"
               className="flex items-center justify-center gap-2 bg-[#e97737] hover:bg-[#d16a2f] text-white px-6 py-3 rounded-lg font-semibold transition-colors text-sm sm:text-base whitespace-nowrap"
             >
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-              +91 78270-33601
+              +91 7977180300
             </a>
           </div>
         </div>

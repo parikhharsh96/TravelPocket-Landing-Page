@@ -9,8 +9,8 @@ export default function ComparisonSection() {
       title: "Group Composition",
       subtitle: "Your travel experience matters",
       travelpocket: {
-        title: "Exclusive TravelPocket Groups",
-        description: "Travel only with fellow TravelPocket pilgrims for a cohesive and personalized experience",
+        title: "Exclusive Harsh Parikh Groups",
+        description: "Travel only with fellow Harsh Parikh pilgrims for a cohesive and personalized experience",
       },
       others: {
         title: "Mixed Groups",
@@ -115,7 +115,7 @@ export default function ComparisonSection() {
             {/* Empty space above Features */}
             <div className="col-span-3"></div>
 
-            {/* Best Value cell above TravelPocket */}
+            {/* Best Value cell above Harsh Parikh */}
             <div className="col-span-5 flex justify-center">
               <div className="bg-[#e97737] text-white text-center py-3 px-8 text-sm font-semibold rounded-t-2xl shadow-lg w-full">
                 Best Value
@@ -148,12 +148,12 @@ export default function ComparisonSection() {
                 <h3 className="text-lg lg:text-xl font-bold text-[#1a2f46]">Features</h3>
               </div>
 
-              {/* TravelPocket Column - Cream/beige gradient background */}
+              {/* Harsh Parikh Column - Cream/beige gradient background */}
               <div className="col-span-5 p-6 bg-[#fff0e8] flex items-center justify-center">
                 <div className="text-center">
                   <div>
-                    <span className="text-2xl sm:text-3xl font-bold text-[#29a4c1]">travel</span>
-                    <span className="text-2xl sm:text-3xl font-bold text-[#1a2f46]">pocket</span>
+                    <span className="text-2xl sm:text-3xl font-bold text-[#29a4c1]">Harsh</span>
+                    <span className="text-2xl sm:text-3xl font-bold text-[#1a2f46]">Parikh</span>
                   </div>
                   <p className="text-xs text-gray-600 mt-1">keep your adventure alive</p>
                 </div>
@@ -181,7 +181,7 @@ export default function ComparisonSection() {
                   </div>
                 </div>
 
-                {/* TravelPocket Column */}
+                {/* Harsh Parikh Column */}
                 <div className="col-span-5 p-4 lg:p-6 border-r border-gray-200">
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#4bae4f] flex items-center justify-center">

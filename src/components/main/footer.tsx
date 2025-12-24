@@ -3,7 +3,7 @@
 import { Facebook, Linkedin, Instagram, Youtube, MapPin, Phone, Mail, Users, MessageSquare } from "lucide-react"
 import { useState } from "react"
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx0bw21rDwtTlaYtvuSpiFe9iprzsCYqGaIllZSL6kCUPJSAnV0WYSGoUShB4x8HQeGqA/exec"
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby-a-Dx3EHouhCPKgmjdjVVfWTMW9nAAL1Tna3_8fOnjg4bw4sJwe4-CqYL91YcaWof/exec"
 
 export default function Footer() {
 
@@ -57,29 +57,28 @@ export default function Footer() {
           <div className="space-y-6">
             {/* Logo */}
             <div>
-              <img src="/images/tp-logo.svg" />
+              <img src="/images/travel-logo.png" height="90px"/>
             </div>
 
             {/* Get in Touch */}
             <div>
               <h3 className="text-lg font-bold text-[#1a2f46] mb-3">Get in Touch</h3>
-              <p className="text-sm font-medium text-[#1a2f46] mb-3">Travelpocket Exploration Pvt. Ltd.</p>
+              <p className="text-sm font-medium text-[#1a2f46] mb-3">Harsh Parikh Pvt. Ltd.</p>
 
               <div className="space-y-3">
                 {/* Address */}
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-[#e97737] flex-shrink-0 mt-0.5" />
                   <p className="text-xs text-gray-600 leading-relaxed">
-                    302 3rd floor Wing-, Plot No. A-34 - Kunji Tower, Near HDFC Bank Soorsagar Road, Akhaliya Circle,
-                    Akhaliya Vikas Yojna, Jodhpur Rajasthan 342003
+                    Harsh Parikh, Mumbai
                   </p>
                 </div>
 
                 {/* Phone */}
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-[#e97737] flex-shrink-0" />
-                  <a href="tel:+917827033601" className="text-sm text-gray-600 hover:text-[#e97737] transition-colors">
-                    +91 78270-33601
+                  <a href="tel:+917977180300" className="text-sm text-gray-600 hover:text-[#e97737] transition-colors">
+                    +91 7977180300
                   </a>
                 </div>
 
@@ -87,10 +86,10 @@ export default function Footer() {
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-[#e97737] flex-shrink-0" />
                   <a
-                    href="mailto:info@travelpocket.in"
+                    href="mailto:harshpparikh96@gmail.com"
                     className="text-sm text-gray-600 hover:text-[#e97737] transition-colors"
                   >
-                    info@travelpocket.in
+                    harshpparikh96@gmail.com
                   </a>
                 </div>
               </div>
@@ -111,10 +110,10 @@ export default function Footer() {
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/travelpocket/" className="text-[#1a2f46] hover:text-[#e97737] transition-colors">
+                <a href="#" className="text-[#1a2f46] hover:text-[#e97737] transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="https://www.youtube.com/@travelpocket/" className="text-[#1a2f46] hover:text-[#e97737] transition-colors">
+                <a href="#" className="text-[#1a2f46] hover:text-[#e97737] transition-colors">
                   <Youtube className="w-5 h-5" />
                 </a>
               </div>
@@ -126,7 +125,7 @@ export default function Footer() {
             {/* WhatsApp */}
             <div>
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">Chat with us on</p>
-              <a href="https://wa.me/917827033601" className="flex items-center gap-3 group">
+              <a href="https://wa.me/917977180300" className="flex items-center gap-3 group">
                 <span className="text-2xl font-semibold text-[#1a2f46] group-hover:text-[#25D366] transition-colors">
                   WhatsApp
                 </span>
@@ -145,7 +144,7 @@ export default function Footer() {
             {/* Instagram */}
             <div>
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">Follow us on</p>
-              <a href="https://www.instagram.com/travelpocket/" className="flex items-center gap-3 group">
+              <a href="#" className="flex items-center gap-3 group">
                 <span className="text-2xl font-semibold text-[#1a2f46] group-hover:text-[#E4405F] transition-colors">
                   Instagram
                 </span>
@@ -176,7 +175,7 @@ export default function Footer() {
                 Testimonials
               </a>
               <a
-                href="https://wa.me/917827033601"
+                href="https://wa.me/917977180300"
                 className="block text-sm text-gray-600 hover:text-[#e97737] transition-colors"
               >
                 Reach Us On Whatsapp
@@ -269,7 +268,7 @@ export default function Footer() {
 
       {/* Copyright Bar */}
       <div className="border-t border-gray-200 py-4">
-        <p className="text-center text-xs text-gray-500">© Copyright 2025 TravelPocket | All Rights Reserved.</p>
+        <p className="text-center text-xs text-gray-500">© Copyright 2025 Harsh PArikh | All Rights Reserved.</p>
       </div>
     </footer>
   )

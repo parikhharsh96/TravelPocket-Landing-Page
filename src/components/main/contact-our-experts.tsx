@@ -6,7 +6,7 @@ import { User, Phone, MessageSquare } from "lucide-react"
 import { useState } from "react"
 
 // This should look like: https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx0bw21rDwtTlaYtvuSpiFe9iprzsCYqGaIllZSL6kCUPJSAnV0WYSGoUShB4x8HQeGqA/exec"
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby-a-Dx3EHouhCPKgmjdjVVfWTMW9nAAL1Tna3_8fOnjg4bw4sJwe4-CqYL91YcaWof/exec"
 
 export default function ContactOurExperts() {
   const [formData, setFormData] = useState({
@@ -68,7 +68,7 @@ export default function ContactOurExperts() {
         <div
           className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-cover rounded-xl sm:rounded-2xl"
           style={{
-            backgroundImage: "url(/images/contact-experts.webp)",
+            backgroundImage: "url(/images/hero-section-bg.svg)",
           }}
         >
           {/* Overlay for better contrast */}
@@ -158,7 +158,7 @@ export default function ContactOurExperts() {
         <div className="flex flex-col mb-12">
           <div className="flex justify-center">
             <img
-              src="/images/contact-experts-edited3.svg"
+              src="/images/hero-section-bg.svg"
               alt="contact our experts"
               className="mx-auto"
             />

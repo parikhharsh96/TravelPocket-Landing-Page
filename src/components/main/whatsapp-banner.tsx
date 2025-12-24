@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react"
 
 export default function WhatsAppBanner() {
     const handleWhatsAppClick = () => {
-        window.open("https://wa.me/917827033601", "_blank")
+        window.open("https://wa.me/917977180300", "_blank")
     }
 
     return (
@@ -75,7 +75,7 @@ export default function WhatsAppBanner() {
                                 }}
                             >
                                 <span className="font-['Inter'] font-bold text-sm leading-normal whitespace-nowrap">
-                                    WhatsApp @+91 78270-33601
+                                    WhatsApp @+91 7977180300
                                 </span>
                                 <img src="/images/whatsappstrip/whatapp_icon.svg" className="inline" />
                             </button>
@@ -109,7 +109,7 @@ export default function WhatsAppBanner() {
                             }}
                         >
                             <span className="font-['Inter'] font-bold text-[18px] leading-normal whitespace-nowrap">
-                                WhatsApp @+91 78270-33601
+                                WhatsApp @+91 7977180300
                             </span>
                             <img src="/images/whatsappstrip/whatapp_icon.svg" className="inline" />
                         </button>

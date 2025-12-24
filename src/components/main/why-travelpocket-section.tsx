@@ -178,7 +178,7 @@ export default function WhyTravelPocketSection() {
 
              <video
               className="w-full h-full rounded-lg object-cover"
-              src="/videos/why-TP-section-video.mov"
+              src="/videos/landing-page-video.mp4"
               autoPlay
               muted
               loop

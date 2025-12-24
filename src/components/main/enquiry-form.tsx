@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { User, Phone, MessageSquare } from "lucide-react"
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx0bw21rDwtTlaYtvuSpiFe9iprzsCYqGaIllZSL6kCUPJSAnV0WYSGoUShB4x8HQeGqA/exec"
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby-a-Dx3EHouhCPKgmjdjVVfWTMW9nAAL1Tna3_8fOnjg4bw4sJwe4-CqYL91YcaWof/exec"
 
 export default function EnquiryForm() {
   const [formData, setFormData] = useState({

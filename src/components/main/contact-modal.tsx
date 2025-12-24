@@ -5,7 +5,7 @@ import { User, Phone, MessageSquare, X } from "lucide-react"
 import { useState, useEffect } from "react"
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx0bw21rDwtTlaYtvuSpiFe9iprzsCYqGaIllZSL6kCUPJSAnV0WYSGoUShB4x8HQeGqA/exec"
+  "https://script.google.com/macros/s/AKfycby-a-Dx3EHouhCPKgmjdjVVfWTMW9nAAL1Tna3_8fOnjg4bw4sJwe4-CqYL91YcaWof/exec"
 
 interface ContactModalProps {
   isOpen: boolean
